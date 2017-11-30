@@ -2,8 +2,8 @@
 let happyNumbers = []; 
 let unhappyNumbers = [];
 let alreadyChecked = [];
-let originalNum = 1;//Integer that is being tested for happy/unhappiness.
-let currentNum = originalNum;//Current square of sum of orignalInteger that the program is running through.
+let originalNum = 1;
+let currentNum = originalNum;
 
 // add together the squares of each digit
 function sumOfSquares(number) {
@@ -34,7 +34,7 @@ function reset() {
     alreadyChecked = [];
 }
 
-
+// cycle through numbers and check for happiness
 function findHappiness() {
     while (happyNumbers.length <= 143) {
         let sum = sumOfSquares(currentNum);
